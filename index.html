@@ -1,57 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omer Tugrul - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <title>Omer Tugrul - Portfolio</title>
+  <link href="./style.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="resume.pdf">CV</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-    <section id="home">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hi, I'm Omer Tugrul. A passionate Electrical and Electronics Engineering student from Bilkent University, with a strong foundation in mathematics and a keen interest in Data Science and Machine Learning.</p>
-    </section>
+  <!-- Home Section -->
+  <section id="home">
+    <h1>Omer Tugrul</h1>
+    <p>Electrical and Electronics Engineering Student | Aspiring Data Scientist</p>
+  </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a highly motivated individual excelling in mathematics, particularly in linear algebra, probability, and statistics. My background in these fields is complemented by my skills in teamwork, leadership, and community impact, honed through my experience as a licensed basketball player and organizer of community projects across Turkey.</p>
-        <p>Currently, I am enhancing my skills in Data Science and Machine Learning, through rigorous coursework and practical projects, aiming to leverage data in making informed decisions.</p>
-    </section>
+  <!-- Projects Carousel -->
+  <section id="projects">
+  <div id="myCarousel" class="carousel slide projects-carousel">
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="row">
+          <!-- Breast Cancer Classification -->
+          <div class="col-sm-4">
+            <a href="#" title="" class="black-image-project-hover">
+              <img src="./assets/images/breast-cancer-classification.jpg" alt="" class="img-responsive">
+            </a>
+            <div class="card-container card-container-lg">
+              <h4>Date: 2022</h4>
+              <h3>Breast Cancer Classification</h3>
+              <p>Developed machine learning algorithms from scratch using numpy for effective breast cancer classification.</p>
+              <a href="#" title="" class="btn btn-default">Discover</a>
+            </div>
+          </div>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div>
-            <h3>Breast Cancer Classification</h3>
-            <p>Developed machine learning algorithms from scratch using numpy for effective breast cancer classification.</p>
+          <!-- Bird Species Classification -->
+          <div class="col-sm-4">
+            <a href="#" title="" class="black-image-project-hover">
+              <img src="./assets/images/bird-species-classification.jpg" alt="" class="img-responsive">
+            </a>
+            <div class="card-container card-container-lg">
+              <h4>Date: 2022</h4>
+              <h3>Bird Species Classification</h3>
+              <p>Developed a CNN model to distinguish 525 bird species using PyTorch.</p>
+              <a href="#" title="" class="btn btn-default">Discover</a>
+            </div>
+          </div>
+
+          <!-- BBC News Classification -->
+          <div class="col-sm-4">
+            <a href="#" title="" class="black-image-project-hover">
+              <img src="./assets/images/bbc-news-classification.jpg" alt="" class="img-responsive">
+            </a>
+            <div class="card-container card-container-lg">
+              <h4>Date: 2022</h4>
+              <h3>BBC News Classification</h3>
+              <p>Analyzed BBC news articles, categorizing them into distinct categories using numpy and pandas.</p>
+              <a href="#" title="" class="btn btn-default">Discover</a>
+            </div>
+          </div>
         </div>
-        <div>
-            <h3>Bird Species Classification</h3>
-            <p>Collaborated in a team to develop a model distinguishing 525 bird species using CNNs and machine learning techniques with PyTorch.</p>
-        </div>
-        <!-- Add more projects here -->
-    </section>
+      </div>
+      <!-- Add more items for other projects -->
+    </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+  </div>
+ </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to connect with me for any exciting opportunities or collaborations.</p>
-        <p>Email: o.tugrul@ug.bilkent.edu.tr</p>
-        <!-- Add LinkedIn or other contact information here -->
-    </section>
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Passionate about Mathematics and Data Science. Experienced in leadership and community projects.</p>
+  </section>
 
-    <footer>
-        <p>© 2024 by Omer Tugrul. Proudly created with HTML & CSS.</p>
-    </footer>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: o.tugrul@ug.bilkent.edu.tr</p>
+  </section>
 
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Omer Tugrul. All rights reserved.</p>
+  </footer>
 </body>
 </html>
