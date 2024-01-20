@@ -1,102 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width,initial-scale=1" name="viewport">
-  <title>Omer Tugrul - Portfolio</title>
-  <link href="./style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>Omer's Inspired Portfolio</title>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <nav class="navbar">
-      <div class="container">
-        <ul class="nav navbar-nav">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="resume.pdf">CV</a></li>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Omer's Portfolio</strong></li>
         </ul>
-      </div>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-  </header>
-
-  <!-- Home Section -->
-  <section id="home">
-    <h1>Omer Tugrul</h1>
-    <p>Electrical and Electronics Engineering Student | Aspiring Data Scientist</p>
-  </section>
-
-  <!-- Projects Carousel -->
-  <section id="projects">
-  <div id="myCarousel" class="carousel slide projects-carousel">
-    <div class="carousel-inner">
-      <div class="item active">
-        <div class="row">
-          <!-- Breast Cancer Classification -->
-          <div class="col-sm-4">
-            <a href="#" title="" class="black-image-project-hover">
-              <img src="./assets/images/breast-cancer-classification.jpg" alt="" class="img-responsive">
-            </a>
-            <div class="card-container card-container-lg">
-              <h4>Date: 2022</h4>
-              <h3>Breast Cancer Classification</h3>
-              <p>Developed machine learning algorithms from scratch using numpy for effective breast cancer classification.</p>
-              <a href="#" title="" class="btn btn-default">Discover</a>
+    <main class="container">
+        <section id="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Discover my world of engineering, creativity, and innovation.</p>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a highly motivated individual with a strong foundation in mathematics and advanced programming skills in Python and machine learning libraries.</p>
+            <figure>
+                <img src="https://unsplash.com/photos/G9_Euqxpu4k" alt="Omer Tugrul" />
+            </figure>
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="grid">
+                <div class="project">
+                    <h3>Project 1: Breast Cancer Classification</h3>
+                    <p>A machine learning project focused on classifying breast cancer types.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Project 2: Bird Species Classification</h3>
+                    <p>An AI model for identifying and classifying various bird species.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Project 3: BBC News Classification</h3>
+                    <p>Classifying news articles into different categories using NLP techniques.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <!-- More projects can be added here in the same format -->
             </div>
-          </div>
-
-          <!-- Bird Species Classification -->
-          <div class="col-sm-4">
-            <a href="#" title="" class="black-image-project-hover">
-              <img src="./assets/images/bird-species-classification.jpg" alt="" class="img-responsive">
-            </a>
-            <div class="card-container card-container-lg">
-              <h4>Date: 2022</h4>
-              <h3>Bird Species Classification</h3>
-              <p>Developed a CNN model to distinguish 525 bird species using PyTorch.</p>
-              <a href="#" title="" class="btn btn-default">Discover</a>
-            </div>
-          </div>
-
-          <!-- BBC News Classification -->
-          <div class="col-sm-4">
-            <a href="#" title="" class="black-image-project-hover">
-              <img src="./assets/images/bbc-news-classification.jpg" alt="" class="img-responsive">
-            </a>
-            <div class="card-container card-container-lg">
-              <h4>Date: 2022</h4>
-              <h3>BBC News Classification</h3>
-              <p>Analyzed BBC news articles, categorizing them into distinct categories using numpy and pandas.</p>
-              <a href="#" title="" class="btn btn-default">Discover</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Add more items for other projects -->
-    </div>
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
-  </div>
- </section>
-
-  <!-- About Me Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Passionate about Mathematics and Data Science. Experienced in leadership and community projects.</p>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: o.tugrul@ug.bilkent.edu.tr</p>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2024 Omer Tugrul. All rights reserved.</p>
-  </footer>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>Python, C, SQL, VHDL, MATLAB, MS Office, LTSpice, Vivado, KeilUvision, Proteus, KL25z Freedom Board, Raspberry Pi</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out for collaborations or inquiries.</p>
+            <a href="mailto:o.tugrul@ug.bilkent.edu.tr">Email</a>
+            <a href="https://linkedin.com/in/omertugrul">LinkedIn</a>
+        </section>
+    </main>
+    <footer class="container">
+        <small>
+            © 2024 Omer Tugrul
+        </small>
+    </footer>
 </body>
 </html>
